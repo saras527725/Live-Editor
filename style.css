@@ -62,18 +62,6 @@ html, body {
     text-align: center;
 }
 
-.htmlLabel {
-    left: 1%;
-}
-
-.cssLabel {
-    left: 34%;
-}
-
-.jsLabel {
-    right: 1%;
-}
-
 #text {
     color: white;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
