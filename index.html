@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="ready()">
+    <div id="container">
+        <div id="editors">
+            <div id="labels">
+                <span id="text" class="htmlLabel">HTML Editor</span>
+                <span id="text" class="cssLabel">CSS Editor</span>
+                <span id="text" class="jsLabel">JS Editor</span>
+            </div>
+            <div id="htmlEditor" class="editor"></div>
+            <div id="cssEditor" class="editor"></div>
+            <div id="jsEditor" class="editor"></div>
+        </div>
+        <iframe id="iframe"></iframe>
+        <button class="button minButton" onclick="minimizeIframe()">Minimize</button>
+        <button class="button maxButton" onclick="maximizeIFrame()">Maximize</button>
+        <button class="button downloadCode" onclick="downloadCode()">Download Code</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.13/ace.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

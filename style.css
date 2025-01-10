@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#container {
+    height: 100%;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#iframe {
+    border: 1px solid black;
+    background: rgb(247, 254, 255);
+    height: 50%;
+    width: 100%;
+}
+
+#editors {
+    border: 2px solid black;
+    position: relative;
+    background-color: #21222C;
+    height: 50%;
+    width: 100%;
+}
+
+.editor {
+    border: 1.5px solid black;
+    position: absolute;
+    top: 8%;
+    height: 90%;
+    width: 32%;
+}
+
+#htmlEditor {
+    left: 2%;
+}
+
+#cssEditor {
+    left: 34%;
+}
+
+#jsEditor {
+    right: 2%;
+}
+
+#labels {
+    position: absolute;
+    top: 0%;
+    height: 8%;
+    width: 32%;
+    text-align: center;
+}
+
+.htmlLabel {
+    left: 1%;
+}
+
+.cssLabel {
+    left: 34%;
+}
+
+.jsLabel {
+    right: 1%;
+}
+
+#text {
+    color: white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.button {
+    background-color: DodgerBlue;
+    border: none;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+.minButton {
+    position: absolute;
+    left: 0%;
+}
+
+/* .downloadCode {
+    position: absolute;
+   left: 0%;
+}*/
+.downloadCode { 
+    position: fixed;
+    bottom: 10px; /* Adjust the value as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the button horizontally */
+}
+
+.maxButton {
+    position: absolute;
+    right: 0%;
+}
